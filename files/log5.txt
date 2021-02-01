@@ -1,0 +1,223 @@
+Id:5
+ExecutionStack:
+	Ref_int v
+	new v <- 20
+	Ref_Ref_int a
+	new a <- v
+	print( v )
+	print( a )
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	new v <- 20
+	Ref_Ref_int a
+	new a <- v
+	print( v )
+	print( a )
+
+SymbolTable:
+v -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	new v <- 20
+	Ref_Ref_int a
+	new a <- v
+	print( v )
+	print( a )
+
+SymbolTable:
+v -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	Ref_Ref_int a
+	new a <- v
+	print( v )
+	print( a )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	Ref_Ref_int a
+	new a <- v
+	print( v )
+	print( a )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	new a <- v
+	print( v )
+	print( a )
+
+SymbolTable:
+a -> Ref_Ref_int(0)
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	new a <- v
+	print( v )
+	print( a )
+
+SymbolTable:
+a -> Ref_Ref_int(0)
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	print( v )
+	print( a )
+
+SymbolTable:
+a -> Ref_Ref_int(2)
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+2 -> Ref_int(1)
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	print( v )
+	print( a )
+
+SymbolTable:
+a -> Ref_Ref_int(2)
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+2 -> Ref_int(1)
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+	print( a )
+
+SymbolTable:
+a -> Ref_Ref_int(2)
+v -> Ref_int(1)
+
+Output:
+Ref_int(1)
+
+FileTable:
+
+
+Heap:
+1 -> 20
+2 -> Ref_int(1)
+
+--------------------------------------------------------------------
+Id:5
+ExecutionStack:
+
+
+SymbolTable:
+a -> Ref_Ref_int(2)
+v -> Ref_int(1)
+
+Output:
+Ref_int(1)
+Ref_Ref_int(2)
+
+FileTable:
+
+
+Heap:
+1 -> 20
+2 -> Ref_int(1)
+
+--------------------------------------------------------------------

@@ -1,0 +1,365 @@
+Id:4
+ExecutionStack:
+	string variableFile
+	variableFile = files\testIn.LOG
+	OPEN -> variableFile
+	int variableInt
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	variableFile = files\testIn.LOG
+	OPEN -> variableFile
+	int variableInt
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> 
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	variableFile = files\testIn.LOG
+	OPEN -> variableFile
+	int variableInt
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> 
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	OPEN -> variableFile
+	int variableInt
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	OPEN -> variableFile
+	int variableInt
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	int variableInt
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+
+Output:
+
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	int variableInt
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+
+Output:
+
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 0
+
+Output:
+
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	READ from variableFile to variableInt
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 0
+
+Output:
+
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 15
+
+Output:
+
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	print( variableInt )
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 15
+
+Output:
+
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 15
+
+Output:
+15
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	READ from variableFile to variableInt
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 15
+
+Output:
+15
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 50
+
+Output:
+15
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	print( variableInt )
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 50
+
+Output:
+15
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+	CLOSE <- variableFile
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 50
+
+Output:
+15
+50
+
+FileTable:
+files\testIn.LOG -> java.io.BufferedReader@1c8d6b63
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:4
+ExecutionStack:
+
+
+SymbolTable:
+variableFile -> files\testIn.LOG
+variableInt -> 50
+
+Output:
+15
+50
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------

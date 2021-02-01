@@ -1,0 +1,109 @@
+/*
+    -fx-background-color: #212121, #242527;
+    -fx-text-fill: #BBBBBB;
+    -fx-border-color: #BA86FA;
+*/
+
+
+
+.root{
+    -fx-background-color: #242527;
+}
+
+/*--label--*/
+.label  {
+    -fx-text-fill: #BBBBBB;
+    -fx-font-size: 13;
+
+    -fx-padding: 0 0 0 10; /*top | right | bottom | left*/
+
+    -fx-border-color: #BA86FA;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+
+    -fx-translate-x: 10px;
+
+}
+
+/*--check box--*/
+.check-box{
+    -fx-translate-x: -10;
+    -fx-height: 30px;
+
+    -fx-cursor: hand;
+}
+
+
+.check-box .box {
+    -fx-background-radius: 10px;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 10px;
+
+    -fx-padding: 0 0 0 20; /*top | right | bottom | left*/
+}
+
+.check-box .mark {
+    -fx-background-color: transparent;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #BA86FA;
+}
+
+.check-box .box:hover {
+    -fx-background-color: transparent;
+    -fx-border-color: #BA86FA;
+}
+
+/*--list view--*/
+.list-view {
+    -fx-background-color: transparent;
+    -fx-padding: 0 -12 0 0; /*top | right | bottom | left*/
+}
+
+.list-cell {
+    -fx-background-color: transparent, #252A2E;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 0px, 5px;
+
+    -fx-padding: 20px;
+    -fx-text-fill: #BBBBBB;
+
+    -fx-cursor: hand;
+}
+
+.list-cell:selected {
+    -fx-background-color: transparent, #BA86FA;
+    -fx-background-radius: 10px;
+    -fx-background-insets: 0px, 5px;
+    -fx-text-fill: #212121;
+}
+
+.list-cell:hover {
+    -fx-background-color: transparent;
+    -fx-border-color: #BA86FA;
+    -fx-border-radius: 10px;
+    -fx-text-fill: #BBBBBB;
+}
+
+.scroll-bar {
+    -fx-opacity: 0;
+}
+
+/*--button--*/
+.button{
+    -fx-background-color: #242527;
+    -fx-effect: dropshadow( three-pass-box, #BA86FA, 10, 0, 0, 0);
+    -fx-text-fill: #BBBBBB;
+
+    -fx-translate-x: -10px;
+
+    -fx-cursor: hand;
+}
+
+.button:hover{
+    -fx-background-color: #BA86FA;
+    -fx-text-fill: #212121;
+}
+

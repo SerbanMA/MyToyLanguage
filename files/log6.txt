@@ -1,0 +1,223 @@
+Id:6
+ExecutionStack:
+	Ref_int v
+	new v <- 20
+	Ref_Ref_int a
+	new a <- v
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	new v <- 20
+	Ref_Ref_int a
+	new a <- v
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+v -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	new v <- 20
+	Ref_Ref_int a
+	new a <- v
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+v -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	Ref_Ref_int a
+	new a <- v
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	Ref_Ref_int a
+	new a <- v
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	new a <- v
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+a -> Ref_Ref_int(0)
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	new a <- v
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+a -> Ref_Ref_int(0)
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+a -> Ref_Ref_int(2)
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+2 -> Ref_int(1)
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	print( HeapRead ( v ) )
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+a -> Ref_Ref_int(2)
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+2 -> Ref_int(1)
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+	print( HeapRead ( HeapRead ( a ) ) + 5 )
+
+SymbolTable:
+a -> Ref_Ref_int(2)
+v -> Ref_int(1)
+
+Output:
+20
+
+FileTable:
+
+
+Heap:
+1 -> 20
+2 -> Ref_int(1)
+
+--------------------------------------------------------------------
+Id:6
+ExecutionStack:
+
+
+SymbolTable:
+a -> Ref_Ref_int(2)
+v -> Ref_int(1)
+
+Output:
+20
+25
+
+FileTable:
+
+
+Heap:
+1 -> 20
+2 -> Ref_int(1)
+
+--------------------------------------------------------------------

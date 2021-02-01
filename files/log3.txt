@@ -1,0 +1,229 @@
+Id:3
+ExecutionStack:
+	bool a
+	int v
+	a = false
+	if (a) {
+	v = 2
+	}
+	else {
+	v = 3
+	}
+	print( v )
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+	int v
+	a = false
+	if (a) {
+	v = 2
+	}
+	else {
+	v = 3
+	}
+	print( v )
+
+SymbolTable:
+a -> false
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+	int v
+	a = false
+	if (a) {
+	v = 2
+	}
+	else {
+	v = 3
+	}
+	print( v )
+
+SymbolTable:
+a -> false
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+	a = false
+	if (a) {
+	v = 2
+	}
+	else {
+	v = 3
+	}
+	print( v )
+
+SymbolTable:
+a -> false
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+	a = false
+	if (a) {
+	v = 2
+	}
+	else {
+	v = 3
+	}
+	print( v )
+
+SymbolTable:
+a -> false
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+	if (a) {
+	v = 2
+	}
+	else {
+	v = 3
+	}
+	print( v )
+
+SymbolTable:
+a -> false
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+	if (a) {
+	v = 2
+	}
+	else {
+	v = 3
+	}
+	print( v )
+
+SymbolTable:
+a -> false
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+	v = 2
+	print( v )
+
+SymbolTable:
+a -> false
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+	print( v )
+
+SymbolTable:
+a -> false
+v -> 2
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:3
+ExecutionStack:
+
+
+SymbolTable:
+a -> false
+v -> 2
+
+Output:
+2
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------

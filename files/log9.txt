@@ -1,0 +1,524 @@
+Id:9
+ExecutionStack:
+	int v
+	v = 4
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	v = 4
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	v = 4
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 4
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 4
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 4
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 4
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 4
+
+Output:
+4
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 3
+
+Output:
+4
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 3
+
+Output:
+4
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 3
+
+Output:
+4
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 3
+
+Output:
+4
+3
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 2
+
+Output:
+4
+3
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 2
+
+Output:
+4
+3
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 2
+
+Output:
+4
+3
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 2
+
+Output:
+4
+3
+2
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 1
+
+Output:
+4
+3
+2
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 1
+
+Output:
+4
+3
+2
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 1
+
+Output:
+4
+3
+2
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	v = v - 1
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 1
+
+Output:
+4
+3
+2
+1
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	while (v > 0) {
+	print( v )
+	v = v - 1
+	}
+	print( v )
+
+SymbolTable:
+v -> 0
+
+Output:
+4
+3
+2
+1
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+	print( v )
+
+SymbolTable:
+v -> 0
+
+Output:
+4
+3
+2
+1
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:9
+ExecutionStack:
+
+
+SymbolTable:
+v -> 0
+
+Output:
+4
+3
+2
+1
+0
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------

@@ -1,0 +1,175 @@
+Id:2
+ExecutionStack:
+	int a
+	int b
+	a = 2 + 3 * 5
+	b = a + 1
+	print( b )
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:2
+ExecutionStack:
+	int b
+	a = 2 + 3 * 5
+	b = a + 1
+	print( b )
+
+SymbolTable:
+a -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:2
+ExecutionStack:
+	int b
+	a = 2 + 3 * 5
+	b = a + 1
+	print( b )
+
+SymbolTable:
+a -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:2
+ExecutionStack:
+	a = 2 + 3 * 5
+	b = a + 1
+	print( b )
+
+SymbolTable:
+a -> 0
+b -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:2
+ExecutionStack:
+	a = 2 + 3 * 5
+	b = a + 1
+	print( b )
+
+SymbolTable:
+a -> 0
+b -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:2
+ExecutionStack:
+	b = a + 1
+	print( b )
+
+SymbolTable:
+a -> 17
+b -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:2
+ExecutionStack:
+	b = a + 1
+	print( b )
+
+SymbolTable:
+a -> 17
+b -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:2
+ExecutionStack:
+	print( b )
+
+SymbolTable:
+a -> 17
+b -> 18
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:2
+ExecutionStack:
+
+
+SymbolTable:
+a -> 17
+b -> 18
+
+Output:
+18
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------

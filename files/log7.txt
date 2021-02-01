@@ -1,0 +1,170 @@
+Id:7
+ExecutionStack:
+	Ref_int v
+	new v <- 20
+	print( HeapRead ( v ) )
+	HeapWrite( v = 30 )
+	print( HeapRead ( v ) + 5 )
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:7
+ExecutionStack:
+	new v <- 20
+	print( HeapRead ( v ) )
+	HeapWrite( v = 30 )
+	print( HeapRead ( v ) + 5 )
+
+SymbolTable:
+v -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:7
+ExecutionStack:
+	new v <- 20
+	print( HeapRead ( v ) )
+	HeapWrite( v = 30 )
+	print( HeapRead ( v ) + 5 )
+
+SymbolTable:
+v -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:7
+ExecutionStack:
+	print( HeapRead ( v ) )
+	HeapWrite( v = 30 )
+	print( HeapRead ( v ) + 5 )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:7
+ExecutionStack:
+	print( HeapRead ( v ) )
+	HeapWrite( v = 30 )
+	print( HeapRead ( v ) + 5 )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:7
+ExecutionStack:
+	HeapWrite( v = 30 )
+	print( HeapRead ( v ) + 5 )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+20
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:7
+ExecutionStack:
+	HeapWrite( v = 30 )
+	print( HeapRead ( v ) + 5 )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+20
+
+FileTable:
+
+
+Heap:
+1 -> 20
+
+--------------------------------------------------------------------
+Id:7
+ExecutionStack:
+	print( HeapRead ( v ) + 5 )
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+20
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:7
+ExecutionStack:
+
+
+SymbolTable:
+v -> Ref_int(1)
+
+Output:
+20
+35
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------

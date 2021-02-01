@@ -1,0 +1,3234 @@
+Id:11
+ExecutionStack:
+	Ref_int v1
+	int cnt
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	int cnt
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+v1 -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	int cnt
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+v1 -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 0
+v1 -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 0
+v1 -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 0
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 0
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[12])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[13])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:12
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:13
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	Ref_int v1
+	int cnt
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	int cnt
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+v1 -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	int cnt
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+v1 -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 0
+v1 -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	new v1 <- 1
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 0
+v1 -> Ref_int(0)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 0
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	newSemaphore( cnt;HeapRead ( v1 ))
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 0
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	fork(){
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+	}
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 1
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[14])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	aquire(cnt)
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	print( HeapRead ( v1 ) - 1 )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	aquire(cnt)
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[11])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 10 )
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 10
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	HeapWrite( v1 = HeapRead ( v1 ) * 2 )
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 100
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	print( HeapRead ( v1 ) )
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+	release(cnt)
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[15])
+
+--------------------------------------------------------------------
+Id:11
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------
+Id:15
+ExecutionStack:
+
+
+SymbolTable:
+cnt -> 1
+v1 -> Ref_int(1)
+
+Output:
+10
+9
+200
+
+FileTable:
+
+
+Heap:
+1 -> 200
+
+Semaphore:
+1 -> (1;[])
+
+--------------------------------------------------------------------

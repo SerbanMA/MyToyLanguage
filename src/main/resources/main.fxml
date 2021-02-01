@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" spacing="10.0" styleClass="Style/mainWindow.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerFX">
+   <padding>
+      <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+   </padding>
+   <children>
+      <HBox alignment="CENTER" prefHeight="21.0" prefWidth="244.0" styleClass="Style/mainWindow.css">
+         <children>
+            <Label prefHeight="17.0" prefWidth="120.0" text=" Program States" textAlignment="CENTER" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Label>
+            <Region prefWidth="0.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+            <CheckBox fx:id="fashion" mnemonicParsing="false" onAction="#setMode" prefHeight="39.0" prefWidth="20.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></CheckBox>
+         </children>
+      </HBox>
+      <ListView fx:id="menuListView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+      <Button fx:id="goButton" mnemonicParsing="false" onAction="#pressGoButton" prefHeight="30.0" prefWidth="70.0" text="Go &gt;&gt;">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></Button>
+   </children>
+</VBox>

@@ -1,0 +1,556 @@
+Id:10
+ExecutionStack:
+	int v
+	Ref_int a
+	v = 10
+	new a <- 22
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	Ref_int a
+	v = 10
+	new a <- 22
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	Ref_int a
+	v = 10
+	new a <- 22
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	v = 10
+	new a <- 22
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(0)
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	v = 10
+	new a <- 22
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(0)
+v -> 0
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	new a <- 22
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(0)
+v -> 10
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	new a <- 22
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(0)
+v -> 10
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 22
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	fork(){
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+	}
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 22
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 22
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 22
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 22
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	HeapWrite( a = 30 )
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+
+
+FileTable:
+
+
+Heap:
+1 -> 22
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+10
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+10
+30
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	v = 32
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+10
+30
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+10
+30
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 32
+
+Output:
+10
+30
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+10
+30
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	print( v )
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 32
+
+Output:
+10
+30
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+10
+30
+32
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+	print( HeapRead ( a ) )
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 32
+
+Output:
+10
+30
+32
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:10
+ExecutionStack:
+
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 10
+
+Output:
+10
+30
+32
+30
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
+Id:14
+ExecutionStack:
+
+
+SymbolTable:
+a -> Ref_int(1)
+v -> 32
+
+Output:
+10
+30
+32
+30
+
+FileTable:
+
+
+Heap:
+1 -> 30
+
+--------------------------------------------------------------------
