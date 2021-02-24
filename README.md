@@ -1,3 +1,1 @@
 # MyToyLanguage
-
-That is
